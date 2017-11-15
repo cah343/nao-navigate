@@ -1,0 +1,16 @@
+local_costmap:
+  global_frame: nav_odometry
+  robot_base_frame: nav_base_link
+  #transform_tolerance: 0.2
+  update_frequency: 5.0
+  publish_frequency: 2.0
+
+  #originally false,true
+  static_map: false
+  rolling_window: true
+
+  #Set details of the costmap (meters)
+  width: .5   #was at .85
+  height: .5
+  #Set resolution of costmap (meters/cell)
+  resolution: 0.05

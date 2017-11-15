@@ -1,0 +1,9 @@
+<launch>
+
+
+  <include file="$(find vicon_bridge)/launch/vicon.launch" />
+
+  <node pkg="nao_2dnav" type="vicon_to_odo.py" name="vicon_to_odo" output="screen">
+  </node>
+
+</launch>

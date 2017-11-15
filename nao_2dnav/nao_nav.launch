@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Connect to Nao -->
+    <!--include file="$(find nao_bringup)/launch/nao_full_py.launch">
+        <arg name="nao_ip" default="128.84.189.142"/>
+        <arg name="roscore_ip" default="128.84.189.205"/>
+    </include-->
+
+    <!-- include the AprilTag launch file -->
+    <include file="$(find nao_2dnav)/launch/AprilTagLaunch.launch" />
+
+    <!-- include the nao_configuration launch file -->
+    <include file="$(find nao_2dnav)/launch/nao_configuration.launch" />
+
+    <!-- include the move_base launch file-->
+    <include file="$(find nao_2dnav)/launch/move_base.launch" />
+
+    <!--create node for the alex_nao_navigate_v3.py to run script -->
+    <!--node pkg="nao_2dnav" type="alex_nao_navigate_v3.py" name="nao_navigate" output="screen">
+    </node-->
+    <!-- start rviz -->
+    <node pkg="rviz" type="rviz" name="my_rviz"
+      args="-d $(find nao_2dnav)/nao_config.rviz"/>
+
+
+</launch>
