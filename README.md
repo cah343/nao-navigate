@@ -8,6 +8,7 @@ The package is designed to autonomously navigate a Nao humanoid robot through a 
 Software Requirements: 
 
 ROS Indigo
+
 Nao Driver package (see http://wiki.ros.org/nao_bringup for how to connect nao to ROS)
 AprilTag Package (see: http://wiki.ros.org/apriltags_ros )
 vicon_bridge Package (see: http://wiki.ros.org/vicon_bridge )
