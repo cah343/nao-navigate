@@ -22,6 +22,8 @@ Startup Instructions:
 
 Turn on Nao Robot, launch using the command: “$ roslaunch nao_bringup nao_full_py.launch nao_ip:=<my_nao_ip> roscore_ip:=<my_comp_ip>  ”
 
+If desired, turn off Nao's awareness using Choregraphe. This stops the head from moving around.
+
 Turn on Vicon System. Connect to vicon, turn on AprilTag monitoring, start navigation stack, and start RVIZ using the command: “$ roslaunch nao_2dnav nao_nav.launch ”
 
 Run the alex_nao_navigate script of your choice. (v3 or v4)
