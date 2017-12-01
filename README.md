@@ -3,6 +3,7 @@ Fall 2017 Project - ASL Cornell
 By: Alex Hirst 
 
 **Purpose:** 
+
 The package is designed to autonomously navigate a Nao humanoid robot through a given mapped workspace. AprilTags are detected using Nao’s camera on its forehead, and will alert the user if an obstacle label with an AprilTag is detected. The package is written in Python and ROS. 
 
 **Software Requirements:** 
